@@ -10,10 +10,10 @@ def process(bug):
     keys = pygame.key.get_pressed()
 
     if keys[pygame.K_a]:
-        bug.image = pygame.image.load("images/Bugflipped.png")
+        bug.image = pygame.image.load("game/images/Bugflipped.png")
         bug.step = -5
     elif keys[pygame.K_d]:
-        bug.image = pygame.image.load("images/bug.png")
+        bug.image = pygame.image.load("game/images/bug.png")
         bug.step = 5
     else:
         bug.step = 0
